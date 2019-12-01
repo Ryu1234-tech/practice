@@ -14,6 +14,15 @@ App.room = App.cable.subscriptions.create("RoomChannel", {
   },
 
   speak: function(content) {
-    return this.perform('speak' , {message: content});
+    return this.perform('speak' , {message:'aaaaaaaaa'});
   }
 });
+
+// document.addEventListener('DOMContentLoaded',function(){
+//   input = document.getElementById('chat-input')
+//   button = document.getElementById('button')
+//   button.addEventListener('click',function(){
+//     content = input.value
+//     debugger
+//   })
+// })
